@@ -1,0 +1,19 @@
+# configs/aptos.yaml
+data_root: "/data/aptos2019"    # 로컬 기본 경로
+aptos_train_images: "train_images"
+aptos_train_csv: "train.csv"
+
+img_size: 448
+batch_size: 32
+epochs: 3
+lr: 3.0e-4
+weight_decay: 1.0e-4
+model_name: "efficientnet_b0"   
+fix_specificity: 0.95           
+seed: 42
+
+use_circular_mask: true
+use_clahe: true
+use_green: true
+
+out_dir: "artifacts"
